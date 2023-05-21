@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <label>=</label>
+            <input type="text" class="display" placeholder="0" id="display-output" readonly>
+            <input type="text" class="displayop" id="display-input">
+
+            <div class="buttons">
+                <button onclick="allclear()" id="allclear" class="operator">AC</button>
+                <button onclick="removeChar()" id="del" class="operator">DEL</button>
+                <button onclick="addChar('%')" id="bpersent" class="operator">%</button>
+                <button onclick="addChar('/')" id="divide" class="operator">/</button>
+
+                <button onclick="addChar('7')" id="seven" >7</button>
+                <button onclick="addChar('8')" id="eight" >8</button>
+                <button onclick="addChar('9')" id="nine" >9</button>
+                <button onclick="addChar('*')" id="multi" class="operator">*</button>
+
+                <button onclick="addChar('4')" id="four" >4</button>
+                <button onclick="addChar('5')" id="five" >5</button>
+                <button onclick="addChar('6')" id="six" >6</button>
+                <button onclick="addChar('-')" id="sub" class="operator">-</button>
+
+                <button onclick="addChar('1')" id="one" >1</button>
+                <button onclick="addChar('2')" id="two" >2</button>
+                <button onclick="addChar('3')" id="three" >3</button>
+                <button onclick="addChar('+')" id="add" class="operator">+</button>
+
+                <button onclick="addChar('0')" id="" >0</button>
+                <button onclick="addChar('00')" id="b" >00</button>
+                <button onclick="addChar('.')" id="b" >.</button>
+                <button onclick="output()" id="b" class="operator">=</button>
+            </div>
+        </div>
+
+        <script src="./script.js"></script>
+  </body>
+</html>
